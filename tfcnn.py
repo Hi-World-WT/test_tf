@@ -115,9 +115,6 @@ class CNN():
 
         t2 = time.time()
         print(t2-t1)
-        print("test accuracy %g" % accuracy.eval(session=sess,
-                                                 feed_dict={self.input_x: self.mnist.test.images, self.input_y: self.mnist.test.labels,
-                                                            keep_prob: 1.0}))
         sess.close()
 
 if __name__ == "__main__":
